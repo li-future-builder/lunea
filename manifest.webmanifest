@@ -1,0 +1,18 @@
+{
+  "name": "Lunéa — A softer place for restless nights",
+  "short_name": "Lunéa",
+  "description": "A gentle sleep-wellness companion for soundscapes, relaxation, journaling, and reflection.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#19152B",
+  "theme_color": "#19152B",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
