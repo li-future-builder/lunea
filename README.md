@@ -9,7 +9,7 @@ Lunéa is a static, privacy-first sleep-wellness web app designed to help people
 ## ✨ Version 1 features
 
 - 🌙 Soft, low-stimulation nighttime interface
-- 🎧 Browser-generated soundscapes: rain, ocean, forest, deep space, room ambience, wind, soft tone, fireplace texture
+- 🎧 Browser-generated soundscapes: rain, ocean, forest, deep space, room ambience, wind, soft tone, and fireplace texture
 - ⏱️ Optional 10/20/30/60-minute sound timer
 - 🫧 Gentle paced-breathing exercise
 - 💭 Private brain-dump journal with supportive reframes
@@ -23,24 +23,26 @@ Lunéa is a static, privacy-first sleep-wellness web app designed to help people
 
 ## 🧠 Science-informed scope
 
-The product deliberately stays within a **sleep-wellness** scope. Its feature set is inspired by established sleep-health principles such as relaxation, sleep tracking/diaries, consistent routines, and reducing pressure around sleep. For persistent or clinically significant insomnia, evidence-based care such as CBT-I should be discussed with a qualified healthcare professional.
+The product deliberately stays within a **sleep-wellness** scope. Its features are inspired by established sleep-health principles such as relaxation, sleep tracking and diaries, consistent routines, and reducing pressure around sleep.
+
+For persistent or clinically significant insomnia, evidence-based care such as cognitive behavioral therapy for insomnia (CBT-I) should be discussed with a qualified healthcare professional.
 
 Useful public-health references:
 
-- NHLBI — Insomnia treatment: https://www.nhlbi.nih.gov/es/salud/insomnio/tratamiento
-- NHLBI — Living with insomnia / sleep diary: https://www.nhlbi.nih.gov/es/salud/insomnio/vivir-con-insomnio
-- American Academy of Sleep Medicine — CBT-I guideline resources: https://learn.aasm.org/AssetListing/Guidelines-at-a-Glance-2291/Guidelines-at-a-Glance-3212
+- [NHLBI — Insomnia treatment](https://www.nhlbi.nih.gov/es/salud/insomnio/tratamiento)
+- [NHLBI — Living with insomnia / sleep diary](https://www.nhlbi.nih.gov/es/salud/insomnio/vivir-con-insomnio)
+- [American Academy of Sleep Medicine — CBT-I guideline resources](https://learn.aasm.org/AssetListing/Guidelines-at-a-Glance-2291/Guidelines-at-a-Glance-3212)
 
 ## 🚀 Run locally
 
 No build step is required.
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/lunea.git
+git clone https://github.com/li-future-builder/lunea.git
 cd lunea
 ```
 
-Open `index.html` in a modern browser, or use a local static server:
+Open `index.html` in a modern browser, or run a local static server:
 
 ```bash
 python -m http.server 8000
@@ -50,20 +52,22 @@ Then visit `http://localhost:8000`.
 
 ## 🌐 Publish with GitHub Pages
 
-1. Create a GitHub repository, e.g. `lunea`.
-2. Upload `index.html`, `styles.css`, `app.js`, `manifest.webmanifest`, and `README.md`.
+1. Create a GitHub repository named `lunea`.
+2. Upload `index.html`, `styles.css`, `app.js`, `manifest.webmanifest`, `README.md`, and `LICENSE`.
 3. Go to **Settings → Pages**.
 4. Under **Build and deployment**, select **Deploy from a branch**.
 5. Select your default branch and `/ (root)`.
 6. Save and wait for GitHub Pages to publish the site.
 
-Because the app is static, there is no backend deployment step.
+Because the app is static, no backend deployment is required.
 
 ## 🔐 Privacy architecture
 
-Version 1 stores journal entries, thoughts, preferences, and sound settings in the browser's local storage. No personal data is sent to a Lunéa server because there is no server in this version.
+Version 1 stores journal entries, thoughts, preferences, and sound settings in the browser's local storage. No personal data is sent to a Lunéa server because this version has no server.
 
-The export function creates a local JSON backup. The clear-data control deletes the Lunéa storage key from the current browser.
+The export function creates a local JSON backup. The clear-data control deletes Lunéa's storage key from the current browser.
+
+**Privacy note:** local storage is not encrypted by default. Anyone with access to the same browser profile may be able to access locally stored data. Exported JSON files may also contain private information, so store them securely.
 
 ## 🛠️ Technology
 
@@ -71,14 +75,24 @@ The export function creates a local JSON backup. The clear-data control deletes 
 - CSS3
 - Vanilla JavaScript
 - Web Audio API
-- localStorage
+- `localStorage`
 - Progressive Web App manifest
 - No framework or build system
 
 ## 📌 Product boundary
 
-Do not market Version 1 as a cure for insomnia. Avoid claims such as “guaranteed sleep,” “treats insomnia,” or “clinically proven.” If future versions add clinical protocols, health-data integrations, or AI health guidance, obtain appropriate clinical, privacy, and regulatory review first.
+Lunéa Version 1 is a wellness tool, not a medical device.
 
-## License
+Do not market it as a cure for insomnia. Avoid claims such as “guaranteed sleep,” “treats insomnia,” or “clinically proven” unless supported by appropriate evidence and review.
 
-Choose a license appropriate for your repository before publishing. MIT is a common option for open-source projects, but you should select the license that matches your intended use.
+If future versions add clinical protocols, health-data integrations, or AI health guidance, obtain appropriate clinical, privacy, and regulatory review first.
+
+## 📄 License
+
+Lunéa is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for the full license text.
+
+Copyright (c) YEAR YOUR-USERNAME
+
+## 🤍 Disclaimer
+
+Lunéa is provided “as is,” without warranties or guarantees of any kind. Use it at your own discretion. It is not a substitute for professional medical advice, diagnosis, or treatment.
