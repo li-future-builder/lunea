@@ -91,7 +91,7 @@ If future versions add clinical protocols, health-data integrations, or AI healt
 
 Lunéa is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for the full license text.
 
-Copyright (c) YEAR YOUR-USERNAME
+Copyright (c) li-future-builder
 
 ## 🤍 Disclaimer
 
