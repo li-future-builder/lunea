@@ -50,17 +50,6 @@ python -m http.server 8000
 
 Then visit `http://localhost:8000`.
 
-## 🌐 Publish with GitHub Pages
-
-1. Create a GitHub repository named `lunea`.
-2. Upload `index.html`, `styles.css`, `app.js`, `manifest.webmanifest`, `README.md`, and `LICENSE`.
-3. Go to **Settings → Pages**.
-4. Under **Build and deployment**, select **Deploy from a branch**.
-5. Select your default branch and `/ (root)`.
-6. Save and wait for GitHub Pages to publish the site.
-
-Because the app is static, no backend deployment is required.
-
 ## 🔐 Privacy architecture
 
 Version 1 stores journal entries, thoughts, preferences, and sound settings in the browser's local storage. No personal data is sent to a Lunéa server because this version has no server.
